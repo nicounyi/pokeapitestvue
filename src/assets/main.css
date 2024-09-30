@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+
+html {
+    height: 100vh;
+    background-color: var(--color-almost-white);
+}
+
+:root {
+    --color-orange: #ECA539;
+    --color-black-red: #C00E20;
+    --color-red: #F22539;
+    --color-dark-grey: #353535;
+    --color-medium-grey: #5E5E5E;
+    --color-grey: #BFBFBF;
+    --color-ligth-grey: #E8E8E8;
+    --color-ligth-grey2: #F5F5F5;
+    --color-ligth-grey3: #E8E8E8;
+    --color-almost-white: #F9F9F9;
+    --color-white: #fff
+}
+
+.mainStyles {
+    background-color: var(--color-almost-white);
+    font-family: "Lato", sans-serif;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0 !important
+}
+
+.button {
+    border-radius: 60px;
+    border: 0;
+    box-shadow: none;
+    font-size: 18px;
+    font-weight: 700;
+    min-width: 150px;
+}
+
+.buttonRed {
+    background-color: var(--color-red);
+    color: var(--color-white);
+}
+
+.buttonGrey {
+    background-color: var(--color-grey);
+    color: var(--color-white);
+}
+
+
+
+.onlyDesktop {
+    display: none;
+}
+
+.loaderContainer {
+    width: 100%;
+    height: 80vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.rotate {
+    display: inline-block;
+    animation: spin 2s linear infinite;
+    width: 106px;
+    height: 106px;
+    display: inline-block;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.listContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    padding: 30px;
+    width: 90vw;
+}
+
+.itemList {
+    color: var(--color-dark-grey);
+    background-color: var(--color-white);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .7rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-size: 16px;
+    align-items: center;
+}
+
+.itemList span {
+    cursor: pointer;
+}
+
+.itemList button {
+    background: transparent;
+    border: 0;
+}
+
+.notFoundItem {
+    text-align: center;
+}
+
+
+
+
+@media (min-width: 1150px) {
+    .onlyDesktop {
+        display: block;
+    }
+
+    .content {
+        width: 60vw;
+    }
+}
