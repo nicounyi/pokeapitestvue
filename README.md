@@ -8,6 +8,14 @@ Para instalar las dependencias e iniciar el servidor de desarrollo, ejecuta el s
 npm install && npm run dev
 ```
 
+o solo
+
+```bash
+npm run dev
+```
+
+El proyecto requiere node 20 o superior.
+
 ### Librerías utilizadas
 
 - Vue 3
